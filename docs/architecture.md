@@ -108,6 +108,14 @@ Reasons:
 - Use standard Windows APIs for serial, device detection, and audio routing.
 - Do not assume built-in mobile broadband features will solve call control.
 
+## Hardware Platform Guidance (WWAN + mPCIe)
+
+- Prefer 2-in-1 laptops with an accessible WWAN slot (mPCIe or M.2 WWAN) for internal modem flexibility.
+- mPCIe is ideal for modular LTE modem cards; M.2 is common in newer thin designs and may be acceptable if not OEM-locked.
+- Verify service manuals for slot type, SIM card access, and antenna cable connectors before purchase.
+- Watch out for OEM whitelists that lock the slot to specific factory modules.
+- If an internal WWAN slot is unavailable, fallback to USB-based external modems (SIM7600-class) is supported.
+
 ## Technical Risks
 
 1. Audio path discovery may differ across modem boards and adapters.
